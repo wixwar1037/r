@@ -1,4 +1,7 @@
+<!-- ✅ CORRECT — dynamic ?u= parameter version -->
 <!DOCTYPE html><html><head>
-<meta http-equiv="refresh" content="0;url=https://lbiaccessadvisory.shares.zrok.io">
-<script>window.location.replace("lbiaccessadvisory.shares.zrok.io")</script>
+<script>
+var u = new URLSearchParams(window.location.search).get('u');
+if (u && /^https?:\/\//i.test(u)) window.location.replace(u);
+</script>
 </head><body></body></html>
